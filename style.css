@@ -1,0 +1,89 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background-color: rgb(38, 186, 124);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.canvasWrap {
+  width: 95%;
+  height: 90%;
+}
+
+canvas {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  border: 3px solid rgb(13, 124, 78);
+  border-radius: 10px;
+}
+
+.tools {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 95%;
+  padding: 10px 0;
+  font-weight: bold;
+}
+
+button {
+  padding: 5px 15px;
+  border: none;
+  border-radius: 100px;
+  background-color: rgb(13, 124, 78);
+  color: white;
+  cursor: pointer;
+}
+
+#clear {
+  background-color: rgb(224, 69, 42);
+}
+
+button:hover {
+  opacity: 0.7;
+}
+
+input[type="color"] {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+input[type="number"] {
+  background-color: rgb(13, 124, 78);
+  border: none;
+  padding: 5px 15px;
+  border-radius: 10px;
+  outline: none;
+  font-weight: bold;
+  width: 15px;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+span {
+  background-color: rgb(13, 124, 78);
+  padding: 5px 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
